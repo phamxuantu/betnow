@@ -51,10 +51,10 @@
                               action="?action=addData">
                             <div class="more-row">
                                 <div class="row_tinh">
-                                    <input type="text" name="nhapso[]"/>
-                                    <input type="text" name="nhapso[]"/>
-                                    <input type="text" name="nhapso[]"/>
-                                    <input type="text" name="nhapso[]"/>
+                                    <input type="text" name="nhapso[]" maxlength="1"/>
+                                    <input type="text" name="nhapso[]" maxlength="1"/>
+                                    <input type="text" name="nhapso[]" maxlength="1"/>
+                                    <input type="text" name="nhapso[]" maxlength="1"/>
                                     <p> X </p>
                                     <input type="text" name="nhapso[]"/>
                                     <p> N units, </p>
@@ -81,10 +81,10 @@
                         </form>
                         <div class="test" style="display:none;"><!-- THÊM KHI CLICK ADD-->
                             <div class="row_tinh">
-                                <input type="text" name="nhapso[]"/>
-                                <input type="text" name="nhapso[]"/>
-                                <input type="text" name="nhapso[]"/>
-                                <input type="text" name="nhapso[]"/>
+                                <input type="text" name="nhapso[]" maxlength="1"/>
+                                <input type="text" name="nhapso[]" maxlength="1"/>
+                                <input type="text" name="nhapso[]" maxlength="1"/>
+                                <input type="text" name="nhapso[]" maxlength="1"/>
                                 <p> X </p>
                                 <input type="text" name="nhapso[]"/>
                                 <p> N units, </p>

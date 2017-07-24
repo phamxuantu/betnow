@@ -7,7 +7,11 @@ $(document).ready(function () {
     $('.more-row').on('keyup', '.row_tinh input:nth-child(6)', function () {
         var sum_n = 0;
         for (var i = 0; i < $('.row_tinh input:nth-child(6)').length - 1; i++) {
-            sum_n += parseInt($($('.row_tinh input:nth-child(6)')[i]).val());
+            if($($('.row_tinh input:nth-child(6)')[i]).val() == ''){
+                sum_n += 0;
+            }else {
+                sum_n += parseInt($($('.row_tinh input:nth-child(6)')[i]).val());
+            }
         }
         $('[name="sum_unit_n"]').attr('value', sum_n);
         $('#price').html((parseInt($('[name="sum_unit_n"]').attr('value')) * 1000 + parseInt($('[name="sum_unit_s"]').attr('value')) * 1000) + ' ks');
@@ -16,7 +20,11 @@ $(document).ready(function () {
     $('.more-row').on('keyup', '.row_tinh input:nth-child(8)', function () {
         var sum_s = 0;
         for (var i = 0; i < $('.row_tinh input:nth-child(8)').length - 1; i++) {
-            sum_s += parseInt($($('.row_tinh input:nth-child(8)')[i]).val());
+            if($($('.row_tinh input:nth-child(8)')[i]).val() == ''){
+                sum_s += 0;
+            }else {
+                sum_s += parseInt($($('.row_tinh input:nth-child(8)')[i]).val());
+            }
         }
         $('[name="sum_unit_s"]').attr('value', sum_s);
         $('#price').html((parseInt($('[name="sum_unit_n"]').attr('value')) * 1000 + parseInt($('[name="sum_unit_s"]').attr('value')) * 1000) + ' ks');
